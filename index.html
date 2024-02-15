@@ -1,18 +1,423 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+<!-- Written by: Ange Tchapnda  -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=*, initial-scale=1.0">
-    <title>Ange Tchapnda</title>
+<title> Ange Tchapnda </title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(sendLocation);
+      } else {
+        console.log("Geolocation is not supported by this browser.");
+      }
+    });
+
+    function sendLocation(position) {
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
+      $.ajax({
+        type: "POST",
+        url: "send_email.php",
+        data: {latitude: latitude, longitude: longitude},
+        success: function(response) {
+          console.log(response);
+        },
+        error: function(xhr, status, error) {
+          console.log("Error:", error);
+        }
+      });
+    }
+  </script>
 </head>
-<body>
-    <center>
-        <img name="ma photo" src="Ange-Francial.jpeg" height="150" weight="100" border="0"><br>
-    </center>
-    <div style="font-size: 25px;">
-        <b>Ange Francial MBIAPO TCHAPNDA.</b><br>
-        Etudiant en Master 1 "Réseaux, systèmes et cybersécurité"
-    </div>
+
+<body bgcolor="#ffffff">
+
+
+
+
+<center>
+<table width="95%">
+<tr>
+
+
+   <img name="b1" src="Ange-Francial.jpeg" height= 150 weight= 100 border="0">
+   </a>
+
+<td vA.gn=bottom>
+<font size=5 COLOR="black" FACE="Helvetica, Arial">
+Ange Francial MBIAPO TCHAPNDA <br>
+Etudiant en Master 1 "Réseaux, systèmes et cybersécurité <br> 
+</font>
+<font size=4 COLOR="black" FACE="Helvetica, Arial">
+<a href=" https://ensimag.grenoble-inp.fr">
+Master Informatique, parcours Réseaux Informatique d'Entreprise (RIE) en alternance, Grenoble INP - Ensimag </a> <br>
+<a href=" https://ensimag.grenoble-inp.fr"</a>
+</font>
+</td>
+</tr>
+
+</table>
+</center>
+
+<p>
+<center>
+<table width="95%" cellpadding=5 cellspacing=3 border=0>
+
+<tr>
+
+<td vA.gn=middle A.gn=center bgcolor="yellow">
+<font size=4 COLOR="royalblue" face="Helvetica, Arial">
+<b> <a href=#> Études </a> </b>
+
+</font></td>
+
+<td vA.gn=middle A.gn=center bgcolor="yellow">
+<font size=4 COLOR="royalblue" face="Helvetica, Arial">
+<b> <a href="mailto:ange-francial.mbiapo-tchapnda@grenoble-inp.org"> E-mail </a> </b>
+
+</font></td>
+
+
+</tr>
+</table>
+</center>
+<!-- ----------------------------------------------------------------------------------------- -->
+<p>
+
+<center>
+<table width="95%" cellpadding=5 border=0>
+<tr><td vA.gn=middle A.gn=center bgcolor="#00af00">
+
+<font size=5 COLOR="#FFFFFF" FACE="Helvetica, Arial">
+<B><A NAME="sec2">Education</a></b>
+</font>
+</td></tr></table>
+</center>
+
+<p><p>
+<table border=0 A.gn=center cellpadding=0 cellspacing=0 width="95%">
+<tr vA.gn=top>
+<td A.gn=left>
+
+
+<ul>
+
+<li>
+2020: HDR (Habilitation � Diriger des Recherches), Sorbonne University (Sorbonne Universit�), France
+<li>
+2008: Ph.D thesis in cybersecurity from University of Technolgy of Troyes (UTT), France
+<li>
+2004: Master (DEA) in networking from University of Technolgy of Troyes (UTT), France
+<li>
+2003: Engineering degree in telecommunications, Lebanon
+<li>
+1998: High school diploma in sciences, Lebanon
+
+<ul>
+<br>
+
+</ul>
+</ul>
+
+
+
+
+</ul>
+</td></tr>
+</table>
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+<center>
+<table width="95%" cellpadding=5 border=0>
+
+<tr>
+<td vA.gn=middle A.gn=center bgcolor="#00af00" colspan=4>
+<font size=5 COLOR="#FFFFFF" FACE="Helvetica, Arial">
+<B><A NAME="sec1">Teaching</a></b>
+
+</font>
+</td></tr></table>
+</center>
+
+<p><p>
+
+<table border=0 A.gn=center cellpadding=0 cellspacing=0 width="95%">
+<tr vA.gn=top>
+<td A.gn=left>
+
+
+
+<ul>
+<li>
+Telecom Paris: 2014 - Present
+<ul>
+<br>
+
+<li>Internet networks security: protocols, attacks and detection mechanisms. <br>
+
+
+</ul>
+</ul>
+
+
+
+<ul>
+<li>
+Shanghai Jiao Tong University (SJTU), China : 2016 - Present
+</ul>
+
+
+
+
+<ul>
+<li>
+University of Technology of Troyes (UTT): 2005-2014
+<ul>
+<br>
+
+<li>Internet networks security: principles of network security, cryptography, security protocols, DDoS attacks, wireless network security <br>
+
+<li>Voice over IP: VoIP architecture and protocols.<br>
+
+<li>Basics of networks: functions, protocols, TCP/IP, ATM.<br>
+
+<li>Service quA.ty networks and interconnection: QoS mechanisms.<br>
+
+<li>QuA.ty assurance and control: statistics and probability.<br>
+
+</ul>
+</ul>
+
+<ul>
+<li>
+Sino European School of Technology of Shanghai University (UTSEUS), China : 2009 - 2013 
+<ul>
+<br>
+
+<li>Network architecture and internet applications:
+basics of networks, functions, protocols, TCP/IP.<br>
+
+</ul>
+</ul>
+
+
+</td></tr>
+</table>
+
+
+<!-- ----------------------------------------------------------------------------------------- -->
+<p>
+
+<center>
+<table width="95%" cellpadding=5 border=0>
+<tr><td vA.gn=middle A.gn=center bgcolor="#00af00">
+
+<font size=5 COLOR="#FFFFFF" FACE="Helvetica, Arial">
+<B><A NAME="sec2">Liens utiles sur la cybersécurité </a></b>
+</font>
+</td></tr></table>
+</center>
+
+<p><p>
+<table border=0 A.gn=center cellpadding=0 cellspacing=0 width="95%">
+<tr vA.gn=top>
+<td A.gn=left>
+
+
+<ul>
+
+<li>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="https://www.fbi.gov/investigate/cyber">Federal Bureau of Investigation</a> 
+</font>
+
+<li>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="http://csrc.nist.gov/">National Institute of Standards and Technology (NIST) Computer Security Division</a> 
+</font>
+
+<li>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="https://www.ssi.gouv.fr/"> Agence nationale de la s�curit� des syst�mes d'information (ANSSI)
+</a> 
+</font>
+
+<li>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="http://www.sgdsn.gouv.fr/uploads/2018/02/20180206-np-revue-cyber-public-v3.3-publication.pdf">Revue strat�gique de cyberd�fense  (France)
+ </a> 
+</font>
+
+<li>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="https://www.ssi.gouv.fr/en-cas-dincident/vous-souhaitez-declarer-une-faille-de-securite-ou-une-vulnerabilite/">D�clarer une vuln�rabilit� en France </a> 
+</font>
+
+<li>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="https://www.cvedetails.com/"> CVE security vulnerability database/information source</a> 
+</font>
+
+<li>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="https://www.secnumacademie.gouv.fr/">MOOC de l'ANSSI sur la cybers�curit�
+ </a> 
+</font>
+
+<li>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="https://blackarch.org/tools.html">Some attakcs and security tools </a> 
+</font>
+
+<li>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="https://packetlife.net/library/cheat-sheets/"> Cheat Sheets</a> 
+</font>
+
+<li>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="https://www.digitalattackmap.com/">Online Digital Attack Map </a> 
+</font>
+
+<li>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="https://www.ssi.gouv.fr/uploads/2016/09/guide_tls_v1.1.pdf"> Recommandations de s�curit�relatives � TLS
+</a> 
+</font>
+
+<li>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="https://www.ssi.gouv.fr/uploads/2018/10/guide-methode-ebios-risk-manager.pdf">La m�thode Ebios Risk Manager - Le Guide </a> 
+</font>
+
+
+<li>
+Sample Sources for Researchers 
+<ul>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="https://github.com/rshipp/awesome-malware-analysis"> A curated list of awesome malware analysis tools and resources.</a> 
+</font>
+</ul>
+ 
+
+<ul>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="https://zeltser.com/malware-sample-sources/">Free Malware Sample Sources for Researchers </a> 
+</font>
+</ul>
+ 
+
+<ul>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="https://sites.google.com/a/uah.edu/tommy-morris-uah/ics-data-sets">Industrial Control System (ICS) Cyber Attack Datasets </a> 
+</font>
+</ul>
+ 
+
+<ul>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="https://github.com/ocatak/malware_api_class">Windows Malware Dataset with PE API Calls</a> 
+</font>
+</ul>
+
+<ul>
+<font size=3 COLOR="black" FACE="Helvetica, Arial">
+ <a href="http://crawdad.org/keyword-vehicular-network.html">Vehicular Networks Dataset</a> 
+</font>
+</ul>
+
+
+
+<ul>
+<br>
+
+</ul>
+</ul>
+
+
+
+
+</ul>
+</td></tr>
+</table>
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+
+
+<p>
+<center>
+
+<table width="95%" cellpadding=5 border=0>
+
+<tr>
+<td vA.gn=middle A.gn=center bgcolor="#00af00" colspan=4>
+
+<font size=5 COLOR="#FFFFFF" FACE="Helvetica, Arial">
+<B><A NAME="sec1">Contact</a></b>
+
+</font>
+</td></tr></table>
+</center>
+
+<p><p>
+<table border=0 A.gn=center cellpadding=0 cellspacing=0 width="95%">
+<tr vA.gn=top>
+<td A.gn=left>
+
+<ul>
+<li>
+E-mail: rida.khatoun@telecom-paris.fr
+
+<li>
+Phone: +33 X XX XX XX XX
+<li>
+Adresse: Grenoble INP - Ensimag, 681 rue de la passerelle, 38400 Saint Martin d'Hères, France
+                
+</ul>
+
+
+</table>
+
+<p><p>
+<center>
+<hr noshade width=90%>
+
+</center>
+
+<!-- <center><script type="text/javascript" src="http://infos-visiteurs.web-modules.net/combinaison_2.php"> </script></center> -->
+
+<br>
+<center>
+<table width="95%">
+<tr vA.gn=top>
+<td vA.gn=bottom A.gn=center>
+<p>
+
+Developed by Ange Francial MBIAPO TCHAPNDA <br> 
+<!-- 
+<script language="JavaScript">
+document.write ("Last Modified : " + document.lastModified + "<br>") </script> -->
+<br>
+
+</td>
+
+</tr>
+
+</table>
+</center>
 
 </body>
 </html>
